@@ -31,7 +31,9 @@ import org.springframework.web.servlet.ModelAndView;
  *
  * @author JUAN-PC
  */
-@CrossOrigin(origins = "http://localhost:8080")
+//@CrossOrigin(origins = "file:///C:/Users/JUAN-PC/Documents/GitHub/moviesFeed/src/main/resources/templates/homePage.html\n")
+
+//@CrossOrigin(origins = "http://10.0.0.15:8080")
 @RestController
 @RequestMapping(value = "/users")
 public class UserController {
