@@ -28,11 +28,11 @@ import org.springframework.web.servlet.ModelAndView;
  *
  * @author JUAN-PC
  */
+//@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST})
 
 
 @RestController
 @RequestMapping(value ="/users")
-//@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST})
 public class UserController {
     
     @Autowired
