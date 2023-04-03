@@ -27,15 +27,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <input type="password" id="password" name="password"><br><br>
             <input type="submit" value="Register">
         </form>
-        <script >
-            fetch("http://10.0.0.15:8080/users")
-                    .then(response => response.json())
-                    .then(data => {
-                        console.log(data);
-                    })
-                    .catch(error => {
-                        console.error(error);
-                    });
-        </script>
+        
     </body>
 </html>

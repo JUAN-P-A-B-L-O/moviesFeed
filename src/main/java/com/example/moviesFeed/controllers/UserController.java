@@ -31,7 +31,7 @@ import org.springframework.web.servlet.ModelAndView;
  *
  * @author JUAN-PC
  */
-//@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST})
+@CrossOrigin(origins = "http://localhost:8080")
 @RestController
 @RequestMapping(value = "/users")
 public class UserController {
@@ -65,6 +65,13 @@ public class UserController {
     public ModelAndView registerView() {
         ModelAndView modelandview = new ModelAndView();
         modelandview.setViewName("registerPage.html");
+        return modelandview;
+    }
+    
+    @RequestMapping("/homepage")
+    public ModelAndView homePageView() {
+        ModelAndView modelandview = new ModelAndView();
+        modelandview.setViewName("homePage.html");
         return modelandview;
     }
 }
