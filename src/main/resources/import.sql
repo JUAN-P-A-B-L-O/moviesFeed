@@ -8,7 +8,7 @@
  */
 
 INSERT INTO tb_user(name,age,password, username) VALUES ('Maria', 23, 'senhaTeste123','aaa');
--- INSERT INTO tb_user(name,age,password,userLogin) VALUES ('cr7', 38, 'senhaTeste1233', 'userTeste2');
+INSERT INTO tb_user(name,age,password,username) VALUES ('cr7', 38, 'senhaTeste1233', 'userTeste2');
 
 
 
