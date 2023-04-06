@@ -4,28 +4,116 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            .main_div{
-                margin: auto;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="main_div">HOME PAGE</div>
-    </body>
 
-    <script >
-        fetch("http://10.0.0.15:8080/users")
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data);
-                })
-                .catch(error => {
-                    console.error(error);
-                });
-    </script>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            border: none;
+            border-radius: 9999px;
+            padding: 15px 20px;
+            font-size: 18px;
+            background-color: #f5f8fa;
+            box-shadow: inset 0 0 0 2px #e6ecf0;
+            color: #14171a;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            box-shadow: inset 0 0 0 2px #1da1f2;
+            background-color: #fff;
+        }
+
+        header {
+            width: 60%;
+            margin: auto;
+            font-size: 2em;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header input {
+            height: 130px;
+            width: 430px;
+        }
+
+        #title-input {
+            height: 30px;
+        }
+
+        .main_div {
+            width: 400px;
+            margin: auto;
+        }
+
+        .box-post {
+            display: block;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="home">
+            HOMEPAGE
+        </div>
+
+        <div class="box-post">
+            <input type="text" name="" id="title-input">
+            <input type="text" name="" id="post-input">
+            <button type="button" class="btn-post">criar</button>
+
+        </div>
+        <div>
+
+        </div>
+    </header>
+
+    <div class="main_div">HOME PAGE
+        <div class="post_div">
+
+        </div>
+
+    </div>
+</body>
+
+<script>
+    /* fetch("http://10.0.0.15:8080/users")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.error(error);
+            }); */
+
+    const divPost = document.querySelector(".post_div");
+    const btnPost = document.querySelector(".btn-post");
+    btnPost.addEventListener("click", () => {
+        console.log("mudou");
+
+        let newDiv = document.createElement("div");
+        let newTitle = document.createElement("h1");
+        let newContent = document.createElement("p");
+
+        const text = "vvbbbbbbbbbbbbb";
+        newTitle.innerHTML = text;
+        newContent.innerHTML = "texting about anything because a so stupid guy, y know! So f stupid guy";
+        newDiv.appendChild(newTitle);
+        newDiv.appendChild(newContent);
+        divPost.appendChild(newDiv);
+    })
+
+</script>
+
 </html>
