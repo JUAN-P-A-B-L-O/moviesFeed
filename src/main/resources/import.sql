@@ -6,7 +6,7 @@
  * Author:  JUAN-PC
  * Created: 22 de fev. de 2023
  */
-
+-- 
 INSERT INTO tb_user(name,age,password, username) VALUES ('Maria', 23, 'senhaTeste123','aaa');
 INSERT INTO tb_user(name,age,password,username) VALUES ('cr7', 38, 'senhaTeste1233', 'userTeste2');
 
@@ -14,7 +14,7 @@ INSERT INTO tb_user(name,age,password,username) VALUES ('cr7', 38, 'senhaTeste12
 
 INSERT INTO tb_post(content, userID) VALUES ('Messi é bem melhor q o FISHNALDO', 1);
 INSERT INTO tb_post(content, userID) VALUES ('OHHH MMMYYYY GODDDDDDDD', 1);
-
-
-
-INSERT INTO tb_movie(name) VALUES ('Marley e eu');
+-- 
+-- 
+-- 
+-- INSERT INTO tb_movie(name) VALUES ('Marley e eu');
